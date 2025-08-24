@@ -3,8 +3,8 @@ import './App.css'
 import HelloWorld from './components/HelloWorld'
 import CustomComponents from './components/CustomComponents'
 import LearnProps from './components/LearnProps'
+import LearnEvent from './components/LearnEvent'
 function App() {
-  const [count, setCount] = useState(0)
   let price = 300
   return (
     <>
@@ -12,6 +12,7 @@ function App() {
       <HelloWorld />
       <CustomComponents />
       <LearnProps stock="Tesla" price={price} />
+      <LearnEvent />
     </>
   )
 }
