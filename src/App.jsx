@@ -6,6 +6,7 @@ import LearnProps from './components/LearnProps'
 import LearnEvent from './components/LearnEvent'
 import LearnLiftingStateUp from './components/LearnLiftingStateUp'
 import LearnUseState from './components/LearnUseState'
+import LearnCounterApp from './components/LearnCounterApp'
 function App() {
   let price = 300
   const sampleClick = (data) => {
@@ -19,7 +20,8 @@ function App() {
       <LearnProps stock="Tesla" price={price} />
       <LearnEvent />
       <LearnLiftingStateUp sampleClick={sampleClick} /> */}
-      <LearnUseState />
+      {/* <LearnUseState /> */}
+      <LearnCounterApp />
     </>
   )
 }
