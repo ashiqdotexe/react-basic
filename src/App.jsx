@@ -5,6 +5,7 @@ import CustomComponents from './components/CustomComponents'
 import LearnProps from './components/LearnProps'
 import LearnEvent from './components/LearnEvent'
 import LearnLiftingStateUp from './components/LearnLiftingStateUp'
+import LearnUseState from './components/LearnUseState'
 function App() {
   let price = 300
   const sampleClick = (data) => {
@@ -12,12 +13,13 @@ function App() {
   }
   return (
     <>
-      <h1>React+Django</h1>
+      {/* <h1>React+Django</h1>
       <HelloWorld />
       <CustomComponents />
       <LearnProps stock="Tesla" price={price} />
       <LearnEvent />
-      <LearnLiftingStateUp sampleClick={sampleClick} />
+      <LearnLiftingStateUp sampleClick={sampleClick} /> */}
+      <LearnUseState />
     </>
   )
 }
