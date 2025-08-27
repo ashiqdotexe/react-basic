@@ -10,6 +10,7 @@ import LearnCounterApp from './components/LearnCounterApp'
 import LearnUseEffect from './components/LearnUseEffect'
 import LearnUseMemo from './components/LearnUseMemo'
 import ChildA from './components/ChildA'
+import LearnUseRef from './components/LearnUseRef'
 const StockContext = createContext()
 const UserContext = createContext()
 function App() {
@@ -33,11 +34,12 @@ function App() {
       {/* <LearnCounterApp /> */}
       {/* <LearnUseEffect /> */}
       {/* <LearnUseMemo /> */}
-      <StockContext.Provider value={{ stock, price }}>
+      {/* <StockContext.Provider value={{ stock, price }}>
         <UserContext.Provider value={{ user, setUser }}>
           <ChildA />
         </UserContext.Provider>
-      </StockContext.Provider>
+      </StockContext.Provider> */}
+      <LearnUseRef />
     </>
   )
 }
