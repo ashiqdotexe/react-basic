@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 import './App.css'
 import HelloWorld from './components/HelloWorld'
 import CustomComponents from './components/CustomComponents'
@@ -9,8 +9,15 @@ import LearnUseState from './components/LearnUseState'
 import LearnCounterApp from './components/LearnCounterApp'
 import LearnUseEffect from './components/LearnUseEffect'
 import LearnUseMemo from './components/LearnUseMemo'
+import ChildA from './components/ChildA'
+const StockContext = createContext()
+const UserContext = createContext()
 function App() {
   let price = 300
+  let stock = "Tesla"
+  const [user, setUser] = useState({ name: "Ashiqur Rahman", isLoggedIn: "Yes" })
+
+
   const sampleClick = (data) => {
     console.log(data)
   }
@@ -25,9 +32,15 @@ function App() {
       {/* <LearnUseState /> */}
       {/* <LearnCounterApp /> */}
       {/* <LearnUseEffect /> */}
-      <LearnUseMemo />
+      {/* <LearnUseMemo /> */}
+      <StockContext.Provider value={{ stock, price }}>
+        <UserContext.Provider value={{ user, setUser }}>
+          <ChildA />
+        </UserContext.Provider>
+      </StockContext.Provider>
     </>
   )
 }
 
 export default App
+export { StockContext, UserContext }
