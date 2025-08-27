@@ -8,6 +8,7 @@ import LearnLiftingStateUp from './components/LearnLiftingStateUp'
 import LearnUseState from './components/LearnUseState'
 import LearnCounterApp from './components/LearnCounterApp'
 import LearnUseEffect from './components/LearnUseEffect'
+import LearnUseMemo from './components/LearnUseMemo'
 function App() {
   let price = 300
   const sampleClick = (data) => {
@@ -23,7 +24,8 @@ function App() {
       <LearnLiftingStateUp sampleClick={sampleClick} /> */}
       {/* <LearnUseState /> */}
       {/* <LearnCounterApp /> */}
-      <LearnUseEffect />
+      {/* <LearnUseEffect /> */}
+      <LearnUseMemo />
     </>
   )
 }
