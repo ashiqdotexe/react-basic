@@ -14,6 +14,7 @@ import LearnUseRef from './components/LearnUseRef'
 import LearnConditionalRender from './components/LearnConditionalRender'
 import { LearnMapping } from './components/LearnMapping'
 import LearnInlineCss from './components/LearnInlineCss'
+import LearnForm from './components/LearnForm'
 const StockContext = createContext()
 const UserContext = createContext()
 function App() {
@@ -45,7 +46,8 @@ function App() {
       {/* <LearnUseRef /> */}
       {/* <LearnConditionalRender /> */}
       {/* <LearnMapping /> */}
-      <LearnInlineCss />
+      {/* <LearnInlineCss /> */}
+      <LearnForm />
     </>
   )
 }
