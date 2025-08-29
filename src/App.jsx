@@ -11,6 +11,7 @@ import LearnUseEffect from './components/LearnUseEffect'
 import LearnUseMemo from './components/LearnUseMemo'
 import ChildA from './components/ChildA'
 import LearnUseRef from './components/LearnUseRef'
+import LearnConditionalRender from './components/LearnConditionalRender'
 const StockContext = createContext()
 const UserContext = createContext()
 function App() {
@@ -39,7 +40,8 @@ function App() {
           <ChildA />
         </UserContext.Provider>
       </StockContext.Provider> */}
-      <LearnUseRef />
+      {/* <LearnUseRef /> */}
+      <LearnConditionalRender />
     </>
   )
 }
